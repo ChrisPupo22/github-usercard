@@ -114,6 +114,8 @@ function createNewCard(cardData) {
   bio.classList.add('card p')
 
   //card.appendChild()
+
+  return card
 }
 
 
