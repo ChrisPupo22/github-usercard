@@ -2,8 +2,8 @@
            (replacing the palceholder with your Github name):
            https://api.github.com/users/<your name>
 */
-const getData = axios.get('https://api.github.com/users/${followersArray}')
-console.log('data check:', getData)
+// const getData = axios.get('https://api.github.com/users/${followersArray}')
+// console.log('data check:', getData)
 
 
 
@@ -70,9 +70,9 @@ followersArray.forEach(user => {
 */
 const cards = document.querySelector('.cards')
 
-getData.forEach(data => {
-  console.log('creating card:',data.id)
-})
+//getData.forEach(data => {
+ // console.log('creating card:',data.id)
+//})
 
 function createNewCard(cardData) {
   //creating elements
@@ -112,11 +112,14 @@ function createNewCard(cardData) {
   followers.classList.add('card p')
   following.classList.add('card p')
   bio.classList.add('card p')
-
+ 
+  
   img.src = cardData.avatar_url
   cardName.textContent = cardData.name 
   userName.textContent = cardData.login
   location.textContent = cardData.location
+  
+  
   
 
   //card.appendChild()
