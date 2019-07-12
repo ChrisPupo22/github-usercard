@@ -113,6 +113,12 @@ function createNewCard(cardData) {
   following.classList.add('card p')
   bio.classList.add('card p')
 
+  img.src = cardData.avatar_url
+  cardName.textContent = cardData.name 
+  userName.textContent = cardData.login
+  location.textContent = cardData.location
+  
+
   //card.appendChild()
 
   return card
